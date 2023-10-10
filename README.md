@@ -14,7 +14,7 @@ The code included in this repository is used to create an application that write
 
 The Github repository can be found here: https://github.com/dscornaienchi/note-taker
 
-The URL of the deployed application can be found here: https://dscornaienchi.github.io/note-taker/
+The URL of the deployed application can be found here: https://dante-note-taker-46b9db23f582.herokuapp.com/
 
 ## Credits
 
