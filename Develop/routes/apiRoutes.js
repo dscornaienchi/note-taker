@@ -15,7 +15,7 @@ router.post('/notes', (req, res) => {
   
   const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../..', 'db.json'), 'utf-8'));
   notes.push(newNote);
-  fs.writeFileSync(path.join(__dirname, '..', 'db.json'), JSON.stringify(notes));
+  fs.writeFileSync(path.join(__dirname, '../..', 'db.json'), JSON.stringify(notes));
   
   res.json(newNote);
 });
@@ -25,7 +25,7 @@ router.delete('/notes/:id', (req, res) => {
   
   const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../..', 'db.json'), 'utf-8'));
   const updatedNotes = notes.filter(note => note.id !== idToDelete);
-  fs.writeFileSync(path.join(__dirname, '..', 'db.json'), JSON.stringify(updatedNotes));
+  fs.writeFileSync(path.join(__dirname, '../..', 'db.json'), JSON.stringify(updatedNotes));
   
   res.sendStatus(200);
 });
